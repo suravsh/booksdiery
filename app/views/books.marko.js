@@ -8,7 +8,7 @@ function create(__helpers) {
       attrs = __helpers.as;
 
   return function render(data, out) {
-    out.w("<!DOCTYPE html><html lang=\"en\"><head><title>List of books.</title><link href=\"css/style.css\" rel=\"stylesheet\"><link href=\"css/star.css\" rel=\"stylesheet\"><link href=\"css/sticky.css\" rel=\"stylesheet\"><link href=\"css/font-awesome.min.css\" rel=\"stylesheet\"><script src=\"components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/formaction.js\" type=\"text/javascript\"></script></head><body>");
+    out.w("<!DOCTYPE html><html lang=\"en\"><head><title>List of books.</title><link href=\"css/style.css\" rel=\"stylesheet\"><link href=\"css/star.css\" rel=\"stylesheet\"><link href=\"css/sticky.css\" rel=\"stylesheet\"><link href=\"css/font-awesome.min.css\" rel=\"stylesheet\"><script src=\"/bower_components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"/bower_components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/formaction.js\" type=\"text/javascript\"></script></head><body>");
 
     if (data.err === 0) {
       out.w("<h1> List of books. </h1><br><table><thead> <th> Book Title </th><th> Author </th><th> Retail Price </th><th> ISBN </th><th> Rating </th><th> Reviews </th><th> Date </th></thead>");

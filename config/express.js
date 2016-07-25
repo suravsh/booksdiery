@@ -23,7 +23,7 @@ module.exports = function(app, config) {
   app.use(cookieParser());
   app.use(compress());
   app.use(express.static(config.root + '/public'));
-  app.use('/components',  express.static('../public/components'));
+  app.use('/bower_components',  express.static(config.root + '/bower_components'));
   app.use(methodOverride());
   
   var controllers = glob.sync(config.root + '/app/controllers/*.js');

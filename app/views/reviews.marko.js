@@ -11,7 +11,7 @@ function create(__helpers) {
   return function render(data, out) {
     out.w("<!DOCTYPE html><html lang=\"en\"><head><title>" +
       escapeXml(data.bookname) +
-      "</title><link href=\"/css/star.css\" rel=\"stylesheet\"><link href=\"/css/style.css\" rel=\"stylesheet\"><link href=\"/css/sticky.css\" rel=\"stylesheet\"><link href=\"/css/font-awesome.min.css\" rel=\"stylesheet\"><script src=\"components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/ratingaction.js\" type=\"text/javascript\"></script></head><body>");
+      "</title><link href=\"/css/star.css\" rel=\"stylesheet\"><link href=\"/css/style.css\" rel=\"stylesheet\"><link href=\"/css/sticky.css\" rel=\"stylesheet\"><link href=\"/css/font-awesome.min.css\" rel=\"stylesheet\"><script src=\"/bower_components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"/bower_components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/ratingaction.js\" type=\"text/javascript\"></script></head><body>");
 
     if (data.err === 0) {
       forEach(data.data, function(book) {

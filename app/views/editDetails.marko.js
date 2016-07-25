@@ -8,7 +8,7 @@ function create(__helpers) {
       escapeXmlAttr = __helpers.xa;
 
   return function render(data, out) {
-    out.w("<!DOCTYPE html><html lang=\"en\"><head><title>Edit book details.</title><link href=\"/css/style.css\" rel=\"stylesheet\"><script src=\"components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/formaction.js\" type=\"text/javascript\"></script></head><body>");
+    out.w("<!DOCTYPE html><html lang=\"en\"><head><title>Edit book details.</title><link href=\"/css/style.css\" rel=\"stylesheet\"><script src=\"/bower_components/jquery/jquery.js\" type=\"text/javascript\"></script><script src=\"/bower_components/jquery/jquery.min.js\" type=\"text/javascript\"></script><script src=\"/js/formaction.js\" type=\"text/javascript\"></script></head><body>");
 
     if (data.err === 0) {
       forEach(data.data, function(book) {
